@@ -1,0 +1,680 @@
+#form-builder {
+    width:100%;
+    padding:10px;
+    position:relative;
+    min-height:630px;
+}
+
+#form-builder #formbuilder-output {
+    width:60%;
+    float:left;
+    display:block;
+    background:#FFF;
+    padding:1%;
+    border:1px solid #EEE;
+}
+
+#form-builder #formbuilder-sidebar {
+    width:35%;
+    float:right;
+    display:block;
+    margin-right:2%;
+    position:absolute;
+    right:2px;
+}
+
+#form-builder #formbuilder-output textarea {
+	resize:none;
+}
+
+#form-builder #formbuilder-sidebar #form-items {
+    margin: 0 0 30px 0;
+    padding: 15px 0;
+    /*background-color: #EFFAB4;*/
+}
+#form-builder #formbuilder-sidebar #form-items li {
+    float: left;
+    margin: 2px 0 4px 10px;
+    padding:0;
+    width:152px;
+}
+#form-builder #formbuilder-sidebar #form-items li img { float: left; margin: 0 4px 0 0; }
+#form-builder #formbuilder-sidebar #form-items li a span { display: block; line-height: 35px; }
+#form-builder #formbuilder-sidebar #form-items li a span.blabel { font-size: 13px; color: #EEE; font-weight: bold; }
+#form-builder #formbuilder-sidebar #form-items li a:hover { text-decoration: none; background-color: red; }
+
+#form-builder #formbuilder-sidebar #form-items a {
+    text-decoration:none;
+    display: block;
+    padding: 5px 5px 0px;
+    background-color: green;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+#form-builder #formbuilder-sidebar #form-items li a:link {background-color:#A1C486}      /* unvisited link */
+#form-builder #formbuilder-sidebar #form-items li a:visited {background-color:#A1C486}  /* visited link */
+#form-builder #formbuilder-sidebar #form-items li a:hover {background-color:#529214}  /* mouse over link */
+#form-builder #formbuilder-sidebar #form-items li a:active {background-color:green}  /* selected link */
+#form-builder #formbuilder-sidebar #form-items a.ui-draggable-dragging { width:140px !important; }
+
+/* green */
+#btn_multiplechoice a:hover,
+#btn_dropdown a:hover,
+#btn_address a:hover,
+#btn_website a:hover,
+#btn_pagebreak a:hover,
+#btn_sectionbreak a:hover
+    {background-color:#83c129 !important}
+#btn_multiplechoice a:active,
+#btn_dropdown a:active,
+#btn_address a:active,
+#btn_website a:active,
+#btn_pagebreak a:active,
+#btn_sectionbreak a:active
+    {background-color:#529214 !important}
+
+/* blue cyan */
+#btn_text a:hover,
+#btn_number a:hover,
+#btn_date a:hover,
+#btn_name a:hover,
+#btn_price a:hover,
+#btn_email a:hover
+    {background-color:#7BB3EF !important}
+#btn_text a:active,
+#btn_number a:active,
+#btn_date a:active,
+#btn_name a:active,
+#btn_price a:active,
+#btn_email a:active
+    {background-color:#2b7acf !important}
+
+/* red */
+#btn_textarea a:hover,
+#btn_checkbox a:hover,
+#btn_time a:hover,
+#btn_phone a:hover,
+#btn_matrixchoice a:hover,
+#btn_file a:hover
+    {background-color:#DC6666 !important}
+#btn_textarea a:active,
+#btn_checkbox a:active,
+#btn_time a:active,
+#btn_phone a:active,
+#btn_matrixchoice a:active,
+#btn_file a:active
+    {background-color:#ac0404 !important}
+
+
+#form-items, #form-item-properties, #form-properties {padding: 0px;}
+#formbuilder-sidebar select {
+	width:288px;
+}
+#formbuilder-sidebar textarea {
+	resize:none;
+}
+#builder_tabs {
+    padding: 0px;
+    border: none;
+    background:none;
+    font-size: 12px;
+    font-family:'Trebuchet MS','Lucida Grande',Tahoma,Arial,sans-serif;
+}
+#builder_tabs ul.ui-widget-header{
+    background: none;
+    border: none;
+}
+#btn_add_field{
+    /*background:none repeat scroll 0 0 #EFFAB4;*/
+    margin-left: 13px;
+}
+#btn_add_field.ui-state-active,#btn_add_field.ui-state-default{
+    border: none;
+}
+#btn_field_properties{
+    /*background:none repeat scroll 0 0 #D1F2A5;*/
+}
+#btn_field_properties.ui-state-active,#btn_field_properties.ui-state-default{
+    border: none;
+}
+#btn_form_properties{
+    /*background:none repeat scroll 0 0 #FFEAE7;*/
+}
+#btn_form_properties.ui-state-active,#btn_form_properties.ui-state-default{
+    border: none;
+}
+.ui-tabs .ui-tabs-nav { margin: 0; padding: 0; }
+#all_form_properties a:link,#all_form_properties a:visited,#all_form_properties a:hover,
+#all_properties a:link,#all_properties a:visited,#all_properties a:hover{
+    color: #B38B01;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+#form-builder #formbuilder-output .form-description {
+    border-bottom:1px dotted #ccc;
+    clear:both;
+    display:block;
+    margin:0 0 1em;
+}
+
+#form-builder #formbuilder-output .form_description[class] {
+    display:block;
+}
+
+#form-builder #formbuilder-output .form_description h2 {
+    clear:left;
+    font-size:160%;
+    font-weight:400;
+    margin:0 0 3px;
+}
+
+#form-builder #formbuilder-output .form_description p {
+    font-size:95%;
+    line-height:130%;
+    margin:0 0 12px;
+}
+
+#form-builder #formbuilder-output #form-contents {
+    width:100%;
+}
+
+#form-builder #formbuilder-output #form-contents hr {
+    display:none;
+}
+
+#form-builder #formbuilder-output #form-contents li.section_break {
+    border-top:1px dotted #ccc;
+    margin-top:9px;
+    padding-bottom:0;
+    padding-left:9px;
+    padding-top:13px;
+    width:97% !important;
+}
+#form-builder #formbuilder-output #form-contents li.section_break h3 {
+    border:none;
+    background:none;
+	cursor:default;
+}
+
+#form-builder #formbuilder-output #form-contents ul li.first {
+    border-top:none !important;
+    margin-top:0 !important;
+    padding-top:0 !important;
+}
+
+#form-builder #formbuilder-output #form-contents .section_break h3 {
+    font-size:110%;
+    font-weight:400;
+    line-height:130%;
+    margin:0 0 2px;
+}
+
+#form-builder #form-contents form .section_break p {
+    font-size:85%;
+    margin:0 0 10px;
+}
+
+#form-builder #form-builder-sortable li ul li.highlighted {
+    background-color:#D1F2A5;
+    border:1px solid #CCCCCC;
+}
+
+#form-builder #form-builder-sortable li ul li.field_li {
+    margin: 0 0 8px;
+}
+#form-builder #form-builder-sortable li ul li.field_li {
+    border: 1px solid white;
+}
+#form-builder #form-builder-sortable li ul.form-page-holder li.field_li:hover {
+    border: 1px dotted #FF9F80;
+    background: transparent url('../images/form-icons/arrow_out.png') no-repeat scroll 98% 4px;
+    cursor:pointer;
+    background-color: #EFFAB4;
+}
+#form-builder #form-builder-sortable li ul.form-page-holder li.field_li:hover * {
+    cursor:pointer;
+}
+#form-builder #formbuilder-output #form-header :hover, #form-builder #formbuilder-output #form-footer {
+    margin-top:10px;
+}
+#form-builder #formbuilder-output #form-header :hover, #form-builder #formbuilder-output #form-footer :hover {
+    border: 1px dotted #FF9F80;
+    cursor:pointer;
+    background-color: #EFFAB4;
+}
+#form-builder #formbuilder-output #form-header p:hover, #form-builder #formbuilder-output #form-footer p:hover {
+    background-color: #EFFAB4;
+}
+#form-builder #formbuilder-output #form-header h2.highlighted,#form_header p.highlighted {
+    background-color:#FFEAE7;
+    border:1px solid #FF9F80;
+}
+
+#form-builder #formbuilder-output #form-header h2, #form-builder #formbuilder-output #form-header p{
+    border: 1px solid #fff;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable {
+    font-size:100%;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li {
+    display:block;
+    margin:0;
+    padding:10px 5px 10px 10px;
+    position:relative;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+#form-builder #formbuilder-output ul#form-builder-sortable li ul {
+    font-size:100%;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+#form-builder #formbuilder-output ul#form-builder-sortable li ul.accept-ready {
+    border:3px dashed #D1F2A5;
+}
+
+#form-builder #formbuilder-output .buttons:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+
+#form-builder #formbuilder-output .buttons {
+    clear:both;
+    display:block;
+    margin-top:10px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li div {
+    display:inline;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li div {
+    color:#444;
+    margin:0 4px 0 0;
+    padding:0 0 8px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li.field_li span {
+    color:#444;
+    float:left;
+	display:block;
+	width:100%;
+    margin:0 4px 0 0;
+    padding:0 0 8px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li div.left {
+    display:inline;
+    float:left;
+    width:48%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li div.right {
+    display:inline;
+    float:right;
+    width:48%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li div.left .medium {
+    width:100%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li div.right .medium {
+    width:98%;
+}
+
+#form-builder #formbuilder-output .clear {
+    clear:both;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul  li div label {
+    clear:both;
+    color:#444;
+    display:block;
+    font-size:85%;
+    line-height:15px;
+    margin:0;
+    padding-top:3px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li div label var {
+    font-style: normal;
+    font-weight: bold;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li span label {
+    clear:both;
+    color:#444;
+    display:block;
+    font-size:85%;
+    line-height:15px;
+    margin:0;
+    padding-top:3px;
+}
+
+#form-builder #formbuilder-output em.currently_entered {
+    white-space: nowrap;
+}
+
+#form-builder #formbuilder-output li .datepicker {
+    cursor:pointer !important;
+    float:left;
+    height:16px;
+    margin:.1em 5px 0 0;
+    padding:0;
+    width:16px;
+}
+
+#form-builder #formbuilder-output .form_description {
+    border-bottom:1px dotted #ccc;
+    clear:both;
+    display:inline-block;
+    margin:0 0 1em;
+}
+
+#form-builder #formbuilder-output .form_description[class] {
+    display:block;
+}
+
+#form-builder #formbuilder-output .form_description h2 {
+    clear:left;
+    font-size:160%;
+    font-weight:400;
+    margin:0 0 3px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul .form_description p {
+    font-size:95%;
+    line-height:130%;
+    margin:0 0 12px;
+}
+
+#form-builder #formbuilder-output hr {
+    display:none;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li.section_break {
+    border-top:1px dotted #ccc;
+    margin-top:9px;
+    padding-bottom:0;
+    padding-left:9px;
+    padding-top:13px;
+    width:97% !important;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul li.first {
+    border-top:none !important;
+    margin-top:0 !important;
+    padding-top:0 !important;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul .section_break h3 {
+    font-size:110%;
+    font-weight:400;
+    line-height:130%;
+    margin:0 0 2px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable li ul .section_break p {
+    font-size:85%;
+    margin:0 0 10px;
+}
+
+/**** Buttons ****/
+#form-builder #formbuilder-output ul#form-builder-sortable input.button_text {
+    overflow:visible;
+    padding:0 7px;
+    width:auto;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable .buttons input {
+    font-size:120%;
+    margin-right:5px;
+}
+
+/**** Inputs and Labels ****/
+#form-builder #formbuilder-output ul#form-builder-sortable label.description {
+    border:none;
+    color:#222;
+    display:block;
+    font-size:95%;
+    font-weight:700;
+    line-height:150%;
+    padding:0 0 1px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable span.symbol {
+    font-size:115%;
+    line-height:130%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable input.text {
+    background:#fff url(../images/form-icons/shadow.gif) repeat-x top;
+    border-bottom:1px solid #ddd;
+    border-left:1px solid #c3c3c3;
+    border-right:1px solid #c3c3c3;
+    border-top:1px solid #7c7c7c;
+    color:#333;
+    font-size:100%;
+    margin:0;
+    padding:2px 0;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable input.other {
+    margin: 0 0 9px 25px;
+}
+#form-builder #formbuilder-output ul#form-builder-sortable input.file {
+    color:#333;
+    font-size:100%;
+    margin:0;
+    padding:2px 0;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable textarea.textarea {
+    background:#fff url(../images/form-icons/shadow.gif) repeat-x top;
+    border-bottom:1px solid #ddd;
+    border-left:1px solid #c3c3c3;
+    border-right:1px solid #c3c3c3;
+    border-top:1px solid #7c7c7c;
+    color:#333;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:100%;
+    margin:0;
+    width:99%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable select.select {
+    color:#333;
+    font-size:100%;
+    margin:1px 0;
+    padding:1px 0 0;
+    background:#fff url(../images/form-icons/shadow.gif) repeat-x top;
+    border-bottom:1px solid #ddd;
+    border-left:1px solid #c3c3c3;
+    border-right:1px solid #c3c3c3;
+    border-top:1px solid #7c7c7c;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable input.currency {
+    text-align:right;
+    padding-right:3px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable input.checkbox {
+    display:block;
+    height:13px;
+    line-height:1.4em;
+    margin:6px 0 0 3px;
+    width:13px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable input.radio {
+    display:block;
+    height:13px;
+    line-height:1.4em;
+    margin:6px 0 0 3px;
+    width:13px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable label.choice {
+    color:#444;
+    display:block;
+    font-size:100%;
+    line-height:1.4em;
+    margin:-1.55em 0 0 25px;
+    padding:4px 0 5px;
+    width:90%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable select.select[class] {
+    margin:0;
+    padding:1px 0;
+}
+
+*:first-child+html select.select[class] {
+    margin:1px 0;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable .safari select.select {
+    font-size:120% !important;
+    margin-bottom:1px;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable input.small {
+    width:25%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable select.small {
+    width:25%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable input.medium {
+    width:50%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable select.medium {
+    width:50%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable input.large {
+    width:99%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable select.large {
+    width:100%;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable textarea.small {
+    height:5.5em;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable textarea.medium {
+    height:10em;
+}
+
+#form-builder #formbuilder-output ul#form-builder-sortable textarea.large {
+    height:20em;
+}
+
+
+#no_fields_notice{
+    border:2px dashed #FF9F80;
+    padding:20px;
+    position:absolute;
+    text-align:right;
+    top:140px;
+    width:100%;
+}
+.no_fields_in_page{
+    border:2px dashed #FF9F80 !important;
+    padding:20px !important;
+    text-align:right;
+    width: 93% !important;
+}
+#form_builder_sortable li.no_fields_in_page:hover{
+    background: none !important;
+}
+#no_fields_notice h3, .no_fields_in_page h3{
+    color: #BD3D20;
+    font-family:"Lucida Grande",Tahoma,Arial,Verdana,sans-serif;
+    font-size:170%;
+    font-weight:400;
+    background:transparent;
+    border:none !important;
+	cursor:default;
+}
+
+#form-builder #formbuilder-output .ui-state-highlight {
+    height:40px;
+}
+
+#form-builder #element_inactive_msg h3 {
+    border:none;
+    background:none;
+	cursor:default;
+}
+
+.hidden {
+	display:none;
+	visibility:hidden;
+}
+
+#element_choices {
+	height:150px;
+	overflow-y:scroll;
+}
+#element_choices .text {
+	width:100px;
+	margin-right:3px;
+}
+#prop_choices a, #element_choices img {
+	cursor:pointer;
+}
+
+#formbuilder-sidebar .element_properties_form {
+    
+}
+#formbuilder-sidebar .element_properties_form li {
+    margin-bottom: 6px;
+}
+#formbuilder-sidebar label {
+    color: #222;
+    text-shadow: white 0 1px 0;
+    display: block;
+    padding: 2px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+textarea,
+input[type="text"], input[type="password"],
+input[type="file"], input[type="button"],
+input[type="submit"], input[type="reset"],
+input[type="email"], input[type="number"],
+input[type="search"], input[type="tel"],
+input[type="url"], select {
+    border-color: #DFDFDF;
+    background-color: white;
+    color: #333;
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 1em;
+}

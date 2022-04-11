@@ -1,0 +1,85 @@
+/* Add here all your CSS customizations */
+.price {
+	color: #F00;
+}
+.price_paid a {
+	color: #096;
+}
+.old_price {
+	text-decoration: line-through !important;
+}
+.deal_price {
+	font-weight: bold;
+	color: #c4322d;
+	font-size: 16px;
+}
+.price_invoiced {
+	color: #039;
+}
+.price_cancel {
+	color: #F60;
+}
+
+.module-box {
+	background: #fad040;
+	padding: 73px 20px 10px;
+	border-radius: 2px;
+	position: relative;
+}
+.module-box span.title {
+	background: url(../img/Hot-Special.png) no-repeat top left;
+	display: inline-block;
+	height: 107px;
+	width: 296px;
+	position: absolute;
+	top: -37px;
+	left: 0;
+}
+.module-box span.bg {
+	background: url(../img/discount.png) no-repeat;
+	height: 90px;
+	width: 90px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -45px;
+	padding-top: 26px;
+	text-align: center;
+	font-weight: bold;
+	color:#000;
+}
+#old-price{
+	text-decoration:line-through;
+	color:#FF0000;
+}
+.module-box{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+}	
+.no-image p {
+	padding: 20px 10px;
+	border-radius: 4px;
+	border: 2px solid #E30003;
+}
+.module-box a.btn {
+	border-radius: 2px;
+	padding: 5px 14px;
+}
+.module-box p {
+	color: #777777;
+}
+.deal-title{
+	color:#000;	
+}
+@media(max-width:990px) {
+	.img-area {
+		text-align: center;
+	}
+	.img-area img {
+		display: inline-block;
+	}
+	.module-box span.bg {
+		top: 40%;
+	}
+}

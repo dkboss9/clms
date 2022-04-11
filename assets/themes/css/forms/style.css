@@ -1,0 +1,220 @@
+/* Corner radius */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -khtml-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -khtml-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
+/** end of Corner Radius **/
+
+/** Nice Button UI **/
+button.nice-button, .button.nice-button {
+    -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+	box-shadow:0 1px 3px rgba(0,0,0,0.5);
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	-border-radius: 18px;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+    text-shadow:0 -1px 1px rgba(0,0,0,0.25);
+	background-image: url(../../images/gradients/36px-blended.png);
+	background:#222 url(../../images/overlay-button.png) repeat-x 0 0;
+	display:inline-block;
+	padding:5px 17px 6px;
+	color:#fff !important;
+	font-size:13px;
+	font-weight:bold;
+	line-height:1;
+	text-decoration:none;
+	border: 1px solid rgba(0, 0, 0, .25);
+	border-bottom:1px solid rgba(0,0,0,0.35);
+	position:relative;
+	cursor:pointer;
+	overflow:visible;
+	width:auto;
+	outline:none;
+}
+button::-moz-focus-inner { border: 0; padding: 0; }
+button.nice-button:hover, .button.nice-button:hover {
+	background-color:#111;
+	color:#fff;
+}
+button.nice-button:active, .button.nice-button:active {
+	-webkit-transform:translateY(1px);
+	-moz-transform:translateY(1px);
+}
+.small-button { font-size: 11px !important; }
+.large-button { font-size: 14px !important; padding: 8px 19px 7px !important; }
+.green-button { background-color: #91bd09 !important; }
+.green-button:hover { background-color: #749a02 !important; }
+.blue-button { background-color: #2daebf !important; }
+.blue-button:hover { background-color: #007d9a !important; }
+.red-button { background-color: #e33100 !important; }
+.red-button:hover { background-color: #872300 !important; }
+.magenta-button{ background-color: #a9014b !important; }
+.magenta-button:hover { background-color: #630030 !important; }
+.orange-button { background-color: #ff5c00 !important; }
+.orange-button:hover { background-color: #d45500 !important; }
+.orangellow-button { background-color: #ffb515 !important; }
+.orangellow-button:hover { background-color: #fc9200 !important; }
+.white-button { background-color: #fff !important; border: 1px solid #ccc !important; color: #666 !important; font-weight: normal !important; text-shadow: 0 1px 1px rgba(255,255,255,1) !important; }
+.white-button:hover { background-color: #eee !important; }
+/** end of Nice Button UI **/
+
+/*NOTIFICATION MESSAGES*/
+.notif-message {
+	display:block;
+	padding:10px 20px;
+	margin-bottom:15px;
+	width:92%;
+}
+.notif-message div {
+	width:auto;
+	margin-bottom:0;
+	margin-left:60px;
+	font-size: 13px;
+	line-height: 20px;
+	color:#555;
+}
+.notif-message h2 {
+	margin-left:60px;
+	margin-bottom:5px;
+	font-size:18px;
+	line-height:20px;
+	font-family: "Modata", Tahoma, Arial, sans-serif;
+	font-weight: normal;
+	color:#333;
+}
+.notif-warning {
+	background:#feffc8 url('../../images/warning_48.png') 20px 50% no-repeat;
+	border:1px solid #f1aa2d;
+}
+.notif-error {
+	background:#fdcea4 url('../../images/stop_48.png') 20px 50% no-repeat;
+	border:1px solid #c44509;
+}
+.notif-success {
+	background:#d4f684 url('../../images/tick_48.png') 20px 50% no-repeat;
+	border:1px solid #739f1d;
+}
+.notif-info {
+	background:#c3e4fd url('../../images/info_48.png') 20px 50% no-repeat;
+	border:1px solid #688fdc;
+}
+.notif-message:hover {
+	cursor:pointer;
+}
+/* end of notification messages */
+
+
+.pds-dyn-form {
+	width:95%;
+	padding:10px;
+	background:#FFF;
+	border:1px solid #c9c9c9;
+}
+.pds-dyn-form .pds-form-header {
+	border-bottom: 1px dotted #CCC;
+}
+.pds-dyn-form .pds-form-header .form-header-title {
+	font-size:22px;
+	padding-top:10px;
+}
+.pds-dyn-form .pds-form-header .form-header-desc {
+	color:#666;
+	font-size:12px;
+	font-style:italic;
+	margin:0;
+	padding:0 0 5px;
+}
+.pds-dyn-form .pds-form-footer {
+	margin-top:10px;
+}
+.pds-dyn-form .pds-form-footer .form-footer-desc {
+	color:#666;
+	font-size:12px;
+	font-style:italic;
+}
+
+.pds-dyn-form .pds-form-body {
+	margin-top:15px;
+}
+.pds-dyn-form .pds-form-body .pds-form-row {
+	display:block;
+	margin-bottom:10px;
+	padding:5px;
+	border:1px solid #FFF;
+}
+.pds-dyn-form .pds-form-body .error-row {
+	border:1px solid #C44509;
+	background-color:#F3F3F3;
+}
+.pds-dyn-form .pds-form-body .pds-form-row:hover {
+	background-color:#F3F3F3;
+}
+.pds-dyn-form .pds-form-body .pds-form-row label {
+	cursor:pointer;
+	width:auto !important;
+}
+.pds-dyn-form .pds-form-body .pds-form-row label.description {
+	font-weight:bold;
+}
+.pds-dyn-form .pds-form-body .pds-form-row div.pds-field-input {
+	display:block;
+	width:100%;
+	clear:both;
+}
+.pds-dyn-form .pds-form-body .pds-form-row p.pds-field-desc {
+	display:block;
+	width:100%;
+	color:#666;
+	font-size:12px;
+	font-style:italic;
+	padding:0;
+	margin:0;
+}
+
+.pds-dyn-form .pds-form-body .pds-form-row input,
+.pds-dyn-form .pds-form-body .pds-form-row textarea {
+	padding:5px !important;
+}
+.pds-dyn-form .pds-form-body .pds-form-row input,
+.pds-dyn-form .pds-form-body .pds-form-row textarea,
+.pds-dyn-form .pds-form-body .pds-form-row select {
+	outline:none;
+	color:#000;
+}
+.pds-dyn-form .pds-form-body .pds-form-row textarea {
+	resize:none;
+}
+.pds-dyn-form .pds-form-body .pds-form-row input.file {
+	border:none;
+}
+
+.pds-dyn-form .pds-form-body .pds-form-row .small {
+	width:150px;
+}
+.pds-dyn-form .pds-form-body .pds-form-row .medium {
+	width:300px;
+}
+.pds-dyn-form .pds-form-body .pds-form-row .large {
+	width:500px;
+}
+
+.pds-dyn-form #submit {
+	padding:5px 10px;
+	cursor:pointer;
+}
+
+.pds-form-errors {
+	margin:0 0 0 -25px;
+	padding:0;
+	list-style:disc;
+	list-style-position:inside;
+}
+.pds-form-errors li {
+	background:none !important;
+	font-weight:normal !important;
+        margin: 0;
+        padding: 0 0 5px 28px;
+}

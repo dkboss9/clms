@@ -1,0 +1,58 @@
+.clear {
+    clear:both;
+}
+
+input, textarea, select {
+    outline:none;
+}
+
+body {
+    /*font:12px/13px Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;*/
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 1.4em;
+}
+
+p {
+    font-size: 12px;
+    font-style: italic;
+    font-family: sans-serif;
+    color: #666;
+    margin: 2px 0 5px;
+    line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: normal;
+    margin: 0;
+    text-shadow: white 0 1px 0;
+    font-size: 23px;
+    padding: 9px 15px 4px 0;
+    line-height: 29px;
+}
+
+div {
+    line-height: 1.4em;
+}
+
+li>ul>li {
+    margin: 0;
+    padding: 0 0 5px 28px;
+    font-weight: bold;
+}
+
+#form-builder-holder {
+    background:#EEE;
+    padding:10px;
+}
+
+#form-output-holder {
+    width:800px;
+    display:block;
+    margin:20px auto;
+}

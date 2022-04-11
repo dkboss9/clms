@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.error{
+    color: red;
+}
+
+#span_package_price{
+    font-weight: bold;
+    background: #0088cc;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 25px;
+  }
